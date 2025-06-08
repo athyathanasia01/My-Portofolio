@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>My Resume</title>
+
+        <!-- My Own CSS -->
+        <link rel="stylesheet" href="style/style.css"/>
+
+        <!-- Font 1 - Anton -->
+        <link 
+            rel="preconnect" 
+            href="https://fonts.googleapis.com"
+        >
+        <link 
+            rel="preconnect" 
+            href="https://fonts.gstatic.com" 
+            crossorigin
+        >
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap" 
+            rel="stylesheet"
+        >
+
+        <!-- Font 2 - DM Sans -->
+        <link 
+            rel="preconnect" 
+            href="https://fonts.googleapis.com"
+        >
+        <link 
+            rel="preconnect" 
+            href="https://fonts.gstatic.com" 
+            crossorigin
+        >
+        <link 
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" 
+            rel="stylesheet"
+        >
+
+        <!-- font Awesome 5.15.4 -->
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" 
+        />
+    </head>
+
+    <body>
+        <div class="background" id="background"></div>
+        <header class="navbar-container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Did You Know Me?"/>
+            </div>
+
+            <div class="navbar-list">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#study">Study Trace</a></li>
+                    <li><a href="#">Hobby</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <article class="about-me" id="about">
+                <div class="about-description">
+                    <h1 class="title">About Me</h1>
+                    <p id="text-about-me">
+                        Mahasiswa tingkat akhir yang antusias di bidang software dan AI-Data Driven. 
+                        Pernah menjadi Bangkit Cohort untuk learning path Mobile Development pada 
+                        tahun 2023 dengan projek akhir aplikasi mobile pemesanan makanan sisa (user 
+                        only side) dengan pemrograman Kotlin. Menjabat sebagai anggota dari divisi 
+                        Data Science untuk Asisten Laboratorium sejak 2024. Berpengalaman mengajar 
+                        di mata kuliah Algoritma dan Pemrograman Dasar, Struktur Data, Basis Data, 
+                        Machine Learning, dan Pemrograman Berbasis Mobile (Framework Flutter).
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <img src="image/profil.png" alt="Annisa Intan Nuraini"/>
+                    <h1 id="name-about-me">Annisa Intan Nuraini</h1>
+                </div>
+            </article>
+
+            <article class="projects" id="project">
+                <h1 class="title">Project I Did</h1>
+
+                <!-- project 1 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project1/linkPict.png" alt="Radio Komunikasi CV GME"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2025</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=1'"><b>Projek Skripsi | Optimalisasi Penerapan Algoritma Clustering dalam Meningkatkan Performa Aturan Asosiasi FP-Growth untuk Rekomendasi Stok Penjualan Radio Komunikasi</b></a></h3>
+                        <p>
+                            Projek skripsi menentukan rekomendasi stok menggunakan perbandingan algoritma <i>clustering</i> yaitu K-Means, HDBSCAN, dan <i>fuzzy c-means</i>, yang masing-
+                            masing memiliki karakteristiknya sendiri-sendiri. Hasil algoritma terbaik kemudian dipilih berdasarkan nilai evaluasi <i>Silhouette</i>, DBI, dan Calinski-Harbasz
+                            Score, untuk memfilter data transaksi penjualan dari setiap <i>cluster</i> terbentuk dan dibandingkan dengan keseluruhan data transaksi. Kemudian filter dan 
+                            keseluruhan data transaksi diproses dengan aturan asosiasi FP-Growth dan dibandingkan hasilnya. Didapatkan salah satu <i>cluster</i> memiliki nilai evaluasi 
+                            <i>support</i> tertinggi sebesar 10% dengan produk yang sama juga muncul pada penerapan FP-Growth untuk data transaksi keseluruhan dengan evaluasi <i>support</i>
+                            tertinggi juga.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- project 2 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project2/linkPict.png" alt="Bookshelf App"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2025</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=2'"><b>Submission Project Dicoding | Pemrograman Front End Pemula</b></a></h3>
+                        <p>
+                            Projek aplikasi website repository buku (selesai dibaca/belum selesai dibaca). Projek ini menerapkan konsep yang dipelajari pada modul
+                            Pemrograman Front-End Pemula dari Dicoding seperti BOM (Browser Object Model) dan DOM (Document Object Model), Event dan Custom Event, 
+                            serta penerapan Web Storage (Local dan Session Storage). 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 3 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project3/linkPict.png" alt="Portofolio App"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2025</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=3'"><b>Submission Project Dicoding | Dasar Pemrograman Web - Website Portofolio</b></a></h3>
+                        <p>
+                            Projek aplikasi website portofolio diri. Projek aplikasi ini menerapkan konsep yang dipelajari pada modul ini diantaranya seperti
+                            struktur dan anatomi HTML, Styling CSS, Float dan Overflow, serta Flexbox.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 4 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project4/linkPict.png" alt="REST API Testing"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2024</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=4'"><b>Submission Project Dicoding | Beginner Backend Developer Learning Path</b></a></h3>
+                        <p>
+                            Projek backend modul Dicoding Backend Pemula dengan JavaScript. Projek akhir ini membuat REST API dengan JavaScript untuk repository
+                            buku (Bookshelf). Projek ini membuat <i>server side</i> untuk menyimpan buku dengan beberapa paramater <i>body</i>, mengambil data keseluruhan 
+                            buku yang ada pada repository tersimpan, mengambil dan menghapus data buku berdasarkan id buku tersimpan, mengambil data buku yang 
+                            sudah dan belum selesai terbaca, serta mengambil buku berdasarkan parameter nama.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 5 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project5/linkPict.png" alt="Website Masakuy"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2024</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=5'"><b>Projek Mata Kuliah MANPROPEL | Masakuy Web App</b></a></h3>
+                        <p>
+                            Projek aplikasi website mata kuliah manajemen projek perangkat lunak. Website ini dibangun dengan framework PHP untuk koneksi database dan
+                            framework JavaScript untuk proses login dan logout. Selain itu fitur yang disediakan selain login dan penyimpanan session, terdapat list 
+                            article tentang masakan, resep masakan dengan berbagai kategori, serta menyimpan resep dalam list favorite. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 6 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project6/linkPict.png" alt="Website Powery"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2024</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=6'"><b>Projek Mata Kuliah SPK | Powery Web App</b></a></h3>
+                        <p>
+                            Projek aplikasi website mata kuliah Sistem Pendukung Keputusan. Ini merupakan project software berbasis website yang dibangun di atas
+                            framework PHP sebagai konektivitas dengan local database (MySQL). Database digunakan sebagai penampung hasil dari perhitungan 
+                            <i>Analytical Hierarchical Process</i> (AHP). Input penilaian berasal dari User dan penilaian dilakukan otomatis menggunakan model AHP 
+                            dari Python. Hasil dari penilaian ditampilkan secara berurutan sebagai rekomendasi personal user. Projek ini berhasil maju ke 
+                            <a href="https://youtu.be/PwTG2MhGvmc?t=21580">prosiding ICONICSS 2024</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 7 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project7/linkPict.png" alt="hand whistle"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2023</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=7'"><b>Submission Project Dicoding | Beginner Machine Learning Learning Path</b></a></h3>
+                        <p>
+                            Projek submission Dicoding untuk modul Machine Learning untuk Pemula yaitu Klasifikasi Suit Gunting, Batu, Kertas dengan
+                            algoritma supervised learning yaitu K-Nearest Neighbour, di mana kelebihannya memproses fitur gambar dengan memecah piksel 
+                            menjadi bagian-bagian kecil serta membuat kelas terpecah untuk training dan testing. Hasil testing yang dilakukan dengan 
+                            epoch 30 didapatkan kurang dari 30 menit (sesuai dengan persyaratan Dicoding) dan akurasi di atas 80%.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 8 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project8/linkPict.png" alt="Capstone Bangkit"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2023</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=8'"><b>Projek Capstone Bangkit 2023 | Mobile ResQ Food Application</b></a></h3>
+                        <p>
+                            Projek aplikasi berbasis mobile yang dirancang untuk menangani <i>user side</i> pada pemesanan makanan sisa (<i>Food Waste</i>) secara <i>online</i>. Aplikasi 
+                            ini dibuat fokus untuk sisi pengguna saja, di mana fitur yang disediakan antara lain: login dan register (integrasi Firebase verfication & authentication), 
+                            list food (sesuai rekomendasi lokasi dan preferensi usia(Machine Learning)), detail food, order, list dan history order, maps (location), dan subscription (monetice).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 9 -->
+                <div class="project">
+                    <div class="project-image">
+                        <img src="image/project9/linkPict.png" alt="Dicoding Submission"/>
+                    </div>
+
+                    <div class="project-description">
+                        <h3 class="year-project">2023</h3>
+                        <h3 class="name-project"><a href="#" onclick="window.location.href='detail.html?id=9'"><b>Dicoding X Bangkit Submission | Android Learning Path</b></a></h3>
+                        <p>
+                            Projek penyelesaian modul pembelajaran oleh Dicoding pada saat program Bangkit 2023 dengan learning path Android Mobile Development. Terdapat 9 modul yang diberikan, 
+                            yang dibagi menjadi 4 tahapan yaitu 1. pra-course (pengantar), diantaranya: Pengenalan ke Logika Pemrograman (Programming Logic 101), Belajar Dasar Git dengan GitHub, Belajar 
+                            Prinsip Pemrograman SOLID, dan Memulai Dasar Pemrograman untuk Menjadi Pengembang Software; 2. pemula (beginner), diantaranya: Memulai Pemrograman dengan Kotlin dan Belajar 
+                            Membuat Aplikasi Android untuk Pemula; 3. basic (fundamental), diantaranya: Belajar Fundamental Aplikasi Android; dan 4. intermediate, diantaranya: Belajar Pengembangan Aplikasi 
+                            Android Intermediate dan Belajar Membuat Aplikasi Android dengan Jetpack Compose. Dari keseluruhan modul terdapat 7 submissions yang perlu diselesaikan. 
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="educations" id="study">
+                <h1 class="title">Educational Background</h1>
+
+                <div class="edu-row">
+                    <!-- edu 1 -->
+                    <div class="education card">
+                        <div class="education-image">
+                            <a href="https://sman4bekasi.sch.id/">
+                                <img src="image/sman4.png" alt="Logo SMAN 4 Bekasi">
+                            </a>
+                        </div>
+
+                        <div class="education-description">
+                            <h3 class="name-education"><b>SMAN 4 Bekasi</b></h3>
+                            <h3 class="year-education">2017-2020</h3>
+                            <h3 class="score-education"><b>Ijazah : 86,67</b></h3>
+                        </div>
+                    </div>
+
+                    <!-- edu 2 -->
+                    <div class="education card">
+                        <div class="education-image">
+                            <a href="https://www.unsika.ac.id/">
+                                <img src="image/unsika.png" alt="Logo UNSIKA">
+                            </a>
+                        </div>
+
+                        <div class="education-description">
+                            <h3 class="name-education"><b>Universitas Singaperbangsa Karawang</b></h3>
+                            <h3 class="year-education">2021-2025</h3>
+                            <h3 class="score-education"><b>IPK : 3,90</b></h3>
+                        </div>
+                    </div>
+
+                    <!-- edu 3 -->
+                    <div class="education card">
+                        <div class="education-image">
+                            <a href="https://drive.google.com/file/d/1f9urCt7nSjZNWyNI83ZlVRsEUgckDc5n/view?usp=sharing">
+                                <img src="image/bangkit.png" alt="Logo Bangkit">
+                            </a>
+                        </div>
+
+                        <div class="education-description">
+                            <h3 class="name-education"><b>Bangkit Alumni</b></h3>
+                            <h3 class="year-education">2023</h3>
+                            <h3 class="score-education"><b>Mobile Development Learning Path</b></h3>
+                        </div>
+                    </div>
+
+                    <!-- edu 4 -->
+                    <div class="education card">
+                        <div class="education-image">
+                            <a href="https://idcamp.ioh.co.id/">
+                                <img src="image/idcamp.png" alt="Logo IDCamp">
+                            </a>
+                        </div>
+
+                        <div class="education-description">
+                            <h3 class="name-education"><b>IDCamp X Dicoding</b></h3>
+                            <h3 class="year-education">2024</h3>
+                            <h3 class="score-education"><b>Backend Engineer Learning Path for Beginner Class</b></h3>
+                        </div>
+                    </div>
+
+                    <!-- edu 5 -->
+                    <div class="education card">
+                        <div class="education-image">
+                            <a href="https://www.dicoding.com/programs/dbsfcodingcamp/2025/registration">
+                                <img src="image/dbs.png" alt="Logo DBS X Dicoding">
+                            </a>
+                        </div>
+
+                        <div class="education-description">
+                            <h3 class="name-education"><b>DBS Camp X Dicoding</b></h3>
+                            <h3 class="year-education">2025</h3>
+                            <h3 class="score-education"><b>Front End Low Touch</b></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <article class="social-media">
+                    <ul>
+                        <li><img src="image/profil-blue.png" alt="MySelf"/></li>
+                        <li><a href="https://www.linkedin.com/in/annisanuraintan01/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/athyathanasia01" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/pipinokio.24?igsh=bmVicThva2ZuYXY3" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </article>
+            </aside>
+        </main>
+
+        <footer>
+            <img src="image/logo.png" alt="Did You Know Me?"/>
+            <p>“Ini adalah akhir, tidak ada ‘selanjutnya’. Namun, hanya karena ini adalah akhir tidak berarti kamu telah melihat keseluruhan cerita. Bacalah lagi!” – Omniscient Reader’s Viewpoint </p>
+        </footer>
+    </body>
+
+    <script src="js/script.js"></script>
+</html>
